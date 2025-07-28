@@ -4,7 +4,6 @@ Module for async comprehension that collects random numbers.
 """
 
 import asyncio
-from typing import List
 async_generator = __import__('0-async_generator').async_generator
 
 
@@ -16,7 +15,6 @@ async def async_comprehension():
     using async comprehension syntax.
 
     Returns:
-        List[float]: List of 10 random numbers between 0 and 10
+        list: List of 10 random numbers between 0 and 10
     """
     return [number async for number in async_generator()]
-
