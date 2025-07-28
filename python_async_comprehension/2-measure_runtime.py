@@ -5,10 +5,10 @@ Module for measuring runtime of parallel async comprehensions.
 
 import asyncio
 import time
-async_comprehension = __import__('1-async_comprehension').async_comprehension
+from typing import List
 
 
-async def measure_runtime():
+async def measure_runtime() -> float:
     """
     Coroutine that measures the runtime of executing async_comprehension
     four times in parallel using asyncio.gather.
@@ -16,6 +16,8 @@ async def measure_runtime():
     Returns:
         float: Total runtime in seconds
     """
+    module = __import__('1-async_comprehension')
+    async_comprehension = module.async_comprehension
 
     start_time = time.time()
 

@@ -4,9 +4,10 @@ Module for async comprehension that collects random numbers.
 """
 
 import asyncio
+from typing import List
 
 
-async def async_comprehension():
+async def async_comprehension() -> List[float]:
     """
     Coroutine that collects 10 random numbers using async comprehension.
 
