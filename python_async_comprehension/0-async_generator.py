@@ -5,7 +5,6 @@ Module for async generator that yields random numbers.
 
 import asyncio
 import random
-from typing import AsyncGenerator
 
 
 async def async_generator():
