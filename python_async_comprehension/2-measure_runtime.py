@@ -24,7 +24,7 @@ async def measure_runtime():
     await asyncio.gather(
         async_comprehension(),
         async_comprehension(),
-        async_comprehension(),x
+        async_comprehension(),
         async_comprehension()
     )
 
